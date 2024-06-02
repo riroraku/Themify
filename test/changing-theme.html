@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title></title>
+		</head>
+		<body>
+			<!-- applies 90% lighten to background -->
+			<p data-theme="bl90">Only applies theme to background color</p>
+			<!-- applies 80% lighten to color -->
+			<p data-theme="tl80">Only applies theme to text color</p>
+			<!-- applies 78% lighten to background and 34% darken to text color -->
+			<p data-theme="bl78,td34">Applies theme both to background color and text color</p>
+			<!-- same function as above -->
+			<p data-theme="td67,bd34">Applies theme both to background color and text color</p>
+			<button onclick="changeTheme()">Change Theme</button>
+			<script src="../src/Themify.js">../src/Themify.js</script>
+			<script>
+				var theme = Themify;
+				var theme_colors = ["#ff0000", "#00ff00", "#0000ff"];
+				var i = 0;
+				function changeTheme() {
+					theme.theme(theme_colors[i]);
+					i >= 2 ? i = 0 : i++;
+				}
+				changeTheme();
+			</script>
+		</body>
+	</html>
