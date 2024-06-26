@@ -137,6 +137,12 @@ Few examples
 		</html>
 ```
 
+## To be added
+
+- [ ] Elevation
+- [ ] CSS properties (deals colors)
+- [ ] Themify exclusive design templates
+
 ## License
 
 ```plain text
